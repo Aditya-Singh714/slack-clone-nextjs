@@ -6,12 +6,11 @@ import { useAuthActions } from "@convex-dev/auth/react";
 export default function Home() {
   const { signOut } = useAuthActions();
 
-return (
-  <div className="text-emerald-900 font-mono text-2xl">
-    Logged In
-    <Button onClick={() => signOut}>
-      Sign out
-    </Button>
-  </div>
-);
-};
+  return (
+    <div className="text-emerald-900 font-mono text-3xl">
+      Logged In
+      <Button onClick={() => signOut}>Sign out
+      </Button>
+    </div>
+  );
+}
